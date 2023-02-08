@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo"> Ghar </h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li> <a href="add.html">Add Item</a><br></li>
+                      <li> <a href="remove.html">Remove Item</a><br></li>
+                        <li><a href="boxin.html">Add Box</a><br></li>
+                        <li><a href="inventory.php">View Inventory</a><br></li>
+                        <li><form action="logout.php"><input class="btn" type="submit" value="Logout"></form></li>
+                    </ul>
+            </div>
+            <div class="search">
+                <form method="post" action="search.php">
+                <input class="srch" type="search" name="name" placeholder="Item Name">
+                <a href="#"><input class="btnn" type="submit" value="Search"> </a>
+                </form>
+            </div>
+        </div>
+        <div class="content">
+            <h1> Manage Your <br><span>Household</span><br>Grocery </h1>
+            <p class="par"> Welcome to Ghar <?php echo "$_SESSION[uid]"?>!!! <br>A smart Inventory Management platform for the use of all...</p>
+        </div>
+    </div>
+</body>
+</html>
